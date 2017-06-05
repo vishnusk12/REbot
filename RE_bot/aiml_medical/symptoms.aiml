@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml version="1.0">
+
+<!-- Free software (c) 2001 ALICE AI Foundation -->
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License -->
+<!-- as published by the Free Software Foundation. -->
+
+<meta name="author" content="Dr. Wallace"/>
+<meta name="language" content="en"/>
+
+
+<category>
+<pattern>*</pattern>
+<that>HOW LONG YOU HAVE BEEN SUFFERING FROM *</that>
+<template>
+Are you disturbed with <star index = "1"/>?.
+</template>
+</category>
+
+<category>
+<pattern>YES</pattern>
+<that>* IS COMMON FOR MANY DISEASES  IS * ALSO *</that>
+<template>
+symptom <star index = "2"/>
+</template>
+</category>
+
+<category>
+<pattern>YES</pattern>
+<that>ARE YOU DISTURBED WITH *</that>
+<template>
+symptom <star index = "1"/>
+</template>
+</category>
+
+<category>
+<pattern>YES</pattern>
+<that>IS * ALSO A SYMPTOM</that>
+<template>
+symptom <star index = "1"/>
+</template>
+</category>
+
+<category>
+<pattern>YES</pattern>
+<that>DO YOU HAVE *</that>
+<template>
+symptom <star index = "1"/>
+</template>
+</category>
+
+<category>
+<pattern>YES</pattern>
+<that>ARE YOU SUFFERING FROM *</that>
+<template>
+symptom <star index = "1"/>
+</template>
+</category>
+
+
+<category>
+<pattern>NO</pattern>
+<that>* IS COMMON FOR MANY DISEASES  IS * ALSO *</that>
+<template>
+Ok.
+</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<that>HOW LONG YOU HAVE BEEN SUFFERING FROM *</that>
+<template>
+Ok.
+</template>
+</category>
+
+
+<category>
+<pattern>* HAVING * ON MY *</pattern>
+<template>
+how long you have been suffering from <star index = "2"/> on your <star index = "3"/>?
+</template>
+</category>
+
+
+<category>
+<pattern>* HAVING * ON *</pattern>
+<template>
+<srai><star index = "1"/> HAVING <star index = "2"/> ON MY <star index = "3"/></srai>
+</template>
+</category>
+
+<category>
+<pattern>* HAVING * ON * FOR *</pattern>
+<template>
+Ok.
+</template>
+</category>
+
+<category>
+<pattern>HAVE * ON *</pattern>
+<template>
+<srai><star index = "1"/>  HAVING <star index = "1"/> ON MY <star index = "2"/></srai>
+</template>
+</category>
+
+<category>
+<pattern>HAVE * ON * FOR *</pattern>
+<template>
+<srai><star index = "1"/>  HAVING <star index = "1"/> ON <star index = "2"/> FOR <star index = "3"/></srai>
+</template>
+</category>
+
+<category>
+<pattern>HAVE * ON MY *</pattern>
+<template>
+<srai><star index = "1"/>  HAVING <star index = "1"/> ON MY <star index = "2"/></srai>
+</template>
+</category>
+
+<category>
+<pattern>HAVE * ON MY * FOR *</pattern>
+<template>
+<srai><star index = "1"/>  HAVING <star index = "1"/> ON <star index = "2"/> FOR <star index = "3"/></srai>
+</template>
+</category>
+
+<category>
+<pattern>I HAVE * ON MY *</pattern>
+<template>
+<srai><star index = "1"/>  HAVING <star index = "2"/> ON MY <star index = "2"/></srai>
+</template>
+</category>
+
+<category>
+<pattern>I HAVE * ON MY * FOR *</pattern>
+<template>
+<srai><star index = "1"/>  HAVING <star index = "1"/> ON <star index = "2"/> FOR <star index = "3"/></srai>
+</template>
+</category>
+
+
+<category>
+<pattern>I HAVE *</pattern>
+<template>
+How long you have been suffering from <star/> ?
+</template>
+</category>
+
+<category>
+<pattern>I HAVE * FOR *</pattern>
+<template>
+<srai><star index = "1"/>  HAVING <star index = "1"/> ON <star index = "2"/> FOR <star index = "2"/></srai>
+</template>
+</category>
+
+
+<category>
+<pattern>* SUFFERING *</pattern>
+<template>
+<srai>I HAVE <star index = "2"/></srai>
+</template>
+</category>
+
+<category>
+<pattern>* SUFFERING * FOR *</pattern>
+<template>
+<srai><star index = "1"/>  HAVING <star index = "1"/> ON <star index = "2"/> FOR <star index = "2"/></srai>
+</template>
+</category>
+
+<category>
+<pattern>* TIRED WITH *</pattern>
+<template>
+<srai>I HAVE <star index = "2"/></srai>
+</template>
+</category>
+
+<category>
+<pattern>* TIRED WITH * FOR *</pattern>
+<template>
+<srai><star index = "1"/>  HAVING <star index = "1"/> ON <star index = "2"/> FOR <star index = "2"/></srai>
+</template>
+</category>
+
+<category>
+<pattern>* TIRED OF *</pattern>
+<template>
+<srai>I HAVE <star index = "2"/></srai>
+</template>
+</category>
+
+<category>
+<pattern>* TIRED OF * FOR *</pattern>
+<template>
+<srai><star index = "1"/>  HAVING <star index = "1"/> ON <star index = "2"/> FOR <star index = "2"/></srai>
+</template>
+</category>
+
+<category>
+<pattern>I FEEL *</pattern>
+<template>
+<srai>I HAVE <star index = "1"/></srai>
+</template>
+</category>
+
+<category>
+<pattern>I FEEL * FOR *</pattern>
+<template>
+<srai><star index = "1"/>  HAVING <star index = "1"/> ON <star index = "2"/> FOR <star index = "2"/></srai>
+</template>
+</category>
+
+<category>
+<pattern>* FEELING *</pattern>
+<template>
+<srai>I HAVE <star index = "2"/></srai>
+</template>
+</category>
+
+<category>
+<pattern>* FEELING * FOR *</pattern>
+<template>
+<srai><star index = "1"/>  HAVING <star index = "1"/> ON <star index = "2"/> FOR <star index = "2"/></srai>
+</template>
+</category>
+
+</aiml>
