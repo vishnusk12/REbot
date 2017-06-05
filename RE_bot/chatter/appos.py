@@ -1,8 +1,3 @@
-'''
-Created on Dec 13, 2016
-
-@author: aneesh.c
-'''
 
 appos = {
 "aren't" : "are not",
