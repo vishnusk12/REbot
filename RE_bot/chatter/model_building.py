@@ -1,8 +1,3 @@
-'''
-Created on Feb 28, 2017
-
-@author: vishnu.sk
-'''
 
 from config_updated import preprocess
 from config_updated import digits
