@@ -1,8 +1,3 @@
-'''
-Created on Feb 23, 2017
-
-@author: vishnu.sk
-'''
 
 import pandas as pd
 import os
